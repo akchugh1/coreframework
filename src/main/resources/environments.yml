@@ -1,0 +1,7 @@
+DEV:
+  BASE_URL: 'https://pro-api.coinmarketcap.com/'
+  API_KEY: '7486fb90-b3a9-411b-beab-de31b27eb746'
+
+SIT:
+  BASE_URL: 'https://pro-api.coinmarketcap.com/'
+  API_KEY: '7486fb90-b3a9-411b-beab-de31b27eb746'
