@@ -1,11 +1,11 @@
-package com.qa.Runner;
+package Runner;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/java/com/qa/feature/"}, plugin = {"pretty",
+@CucumberOptions(features = {"src/test/resources/com/qa/feature/"}, plugin = {"pretty",
         "json:target/cucumber_reports/Cucumber.json", "rerun:target/rerun.txt", // Creates a text file with failed
         // scenarios
         "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"}, glue = {

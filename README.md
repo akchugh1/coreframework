@@ -1,6 +1,6 @@
 # Project Title
 
-This Project is based on Cucumber TestNG Maven using Allure Report.
+This project utilizes Cucumber with TestNG and Maven, and integrates Allure for reporting.
 
 # Getting Started
 
@@ -121,8 +121,10 @@ Allure reports are implemented.
 to run the reports
 
 run below command on terminal
-cd target
-allure serve allure-results
+
+	$ cd target
+    $ allure serve allure-results
+
 
  Screenshot of the allure reports
 

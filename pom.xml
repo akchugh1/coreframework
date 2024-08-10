@@ -9,9 +9,15 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <aspectj.version>1.8.10</aspectj.version>
-        <runner>${runner_name}</runner>
+        <runner>TestRunner.java</runner>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+    <repositories>
+        <repository>
+            <id>mavenCentral</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -172,13 +178,6 @@
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
             <version>2.4.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <version>2.4.0</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.appium</groupId>
@@ -279,7 +278,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.10.0</version>
                 <configuration>
-                    <reportVersion>${allure.version}</reportVersion>
+                    <reportVersion>2.30.0</reportVersion>
                     <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                 </configuration>
             </plugin>
